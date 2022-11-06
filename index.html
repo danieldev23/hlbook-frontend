@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HLSocial by DanielDev</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <div>
+    <script src="script.js"></script>
+
+    <nav>
+      <div class="nav-left">
+       <a href="index.html"> <img src="images/letter-h.png" class="logo-img" /></a>
+        <!-- <h1 style="color: #1876f2; font-size: 34px">H</h1> -->
+        <h1 class="logo">LBook</h1>
+
+        <ul>
+          <li><img src="/images/notification.png"/></li>
+          <li><img src="/images/email.png"/></li>
+          <li><img src="/images/tv.png"/></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <img src="images/search.png" />
+        <input type="text" placeholder="Tìm kiếm trên HLBook...?" />
+      </div>
+      <div class="nav-right">
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="images/user.jpg" />
+        </div>
+      </div>
+      <!-- ----------------------- setting-menu ----------------------- -->
+      <div class="settings-menu" id="settings">
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="images/user.jpg" />
+            <div>
+              <p>
+                Dang Quoc Huy
+                <i class="fas fa-check-circle" style="color: #1876f2"></i>
+              </p>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="images/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="setting-links">
+            <img src="images/settings.png" class="setting-icon" />
+            <a href="#"
+              >Setting & Privacy <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/help-desk.png" class="setting-icon" />
+            <a href="#"
+              >Help & Support <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+
+          <div class="setting-links">
+            <img src="images/brightness.png" class="setting-icon" />
+            <a href="#"
+              >Display & Accessibility <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="images/logout.png" class="setting-icon" />
+            <a href="#">Logout <img src="images/arrow.png" width="10px" /></a>
+          </div>
+          <button class="btn-up" onclick="up()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #525252; transform: ;msFilter:;"><path d="M4 14h4v7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-7h4a1.001 1.001 0 0 0 .781-1.625l-8-10c-.381-.475-1.181-.475-1.562 0l-8 10A1.001 1.001 0 0 0 4 14z"></path></svg></button>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- ----------------------- left-sidebar ----------------------- -->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><img src="images/newspaper.png" /> Lastes News</a>
+          <a href="#"><img src="images/people.png" /> Friends</a>
+          <a href="#"><img src="images/meeting.png" /> Group</a>
+          <a href="#"
+            ><img src="images/marketplace.png" /> MarketPlace</a
+          >
+          <a href="#"><img src="images/movie.png" /> Watch</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"><img src="images/mac.avif" /> Web Developer</a>
+          <a href="#"
+            ><img src="images/shortcut-2.png" /> Web Designer</a
+          >
+          <a href="#"
+            ><img src="images/code.avif" /> Fullstack Development</a
+          >
+          <a href="#"><img src="images/web.avif" /> Software Engineer</a>
+        </div>
+      </div>
+      <!-- ----------------------- main content ----------------------- -->
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="images/upload.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="images/eny.jpg" />
+            <p>Li Nh</p>
+          </div>
+          <div class="story story3">
+            <img src="images/member-3.png" />
+            <p>Emy</p>
+          </div>
+          <div class="story story4">
+            <img src="images/member-2.png" />
+            <p>Huy</p>
+          </div>
+          <div class="story story5">
+            <img src="images/eny-2.jpg" />
+            <p>Em yêu<i class="fas fa-heart" style="color: red"></i></p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="images/user.jpg" />
+            <div>
+              <p>
+                Dang Quoc Huy
+                <i class="fas fa-check-circle" style="color: #1876f2"></i>
+              </p>
+              <small>Public <i class="fas fa-caret-down"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              name=""
+              id=""
+              rows="3"
+              placeholder="What's on your mind, Huy?"></textarea>
+            <div class="add-post-links">
+              <a href="#"><img src="images/live.png" /> Live Video</a>
+              <a href="#"><img src="images/camera.png" /> Photo/Video</a>
+              <a href="#"><img src="images/in-love.png" /> Feeling/Activity</a>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/user.jpg" />
+              <div>
+                <p>
+                  Dang Quoc Huy
+                  <i class="fas fa-check-circle" style="color: #1876f2"></i>
+                </p>
+                <span>October 04 2022, 12:52 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            I am a <span>Web Developer. </span>I can provide clean code and
+            pixel perfect design. I also make the website more & more
+            interactive with web animations. <br /><a href="#">#developer</a>
+            <br />
+            <a href="#">#coder</a> <br /><a href="#">#blockchain</a>
+          </p>
+          <img src="images/fbcover.jpg" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/positive-vote.png" /> 50k</div>
+              <div><img src="images/comment.png" /> 15k</div>
+              <div><img src="images/share.png" /> 3k</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/user.jpg" /> <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/user.jpg" />
+              <div>
+                <p>
+                  Dang Quoc Huy
+                  <i class="fas fa-check-circle" style="color: #1876f2"></i>
+                </p>
+                <span>October 04 2022, 12:52 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            I am a <span>Web Developer. </span>I can provide clean code and
+            pixel perfect design. I also make the website more & more
+            interactive with web animations. <br /><a href="#">#developer</a>
+            <br />
+            <a href="#">#coder</a> <br /><a href="#">#blockchain</a>
+          </p>
+          <img src="images/fb.jpg" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/positive-vote.png" /> 50k</div>
+              <div><img src="images/comment.png" /> 15k</div>
+              <div><img src="images/share.png" /> 3k</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/user.jpg" /> <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/me.jpg" />
+              <div>
+                <p>
+                  Đặng Quốc Huy
+                  <i class="fas fa-check-circle" style="color: #1876f2"></i>
+                </p>
+                <span>October 04 2022, 12:52 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            I am a <span>Web Developer. </span>I can provide clean code and
+            pixel perfect design. I also make the website more & more
+            interactive with web animations. <br /><a href="#">#developer</a>
+            <br />
+            <a href="#">#coder</a> <br /><a href="#">#blockchain</a>
+          </p>
+          <video
+            src="images/video.mp4"
+            class="post-video"
+            autoplay
+            loop
+            muted></video>
+          <div class="post-row">
+            <div class="activity-icons">
+        <div><img src="images/positive-vote.png" /> 50k</div>
+        <div><img src="images/comment.png" /> 15k</div>
+        <div><img src="images/share.png" /> 3k</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/user.jpg" /> <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="load-more-btn">Load More</button>
+      </div>
+      <!-- ----------------------- right-sidebar ----------------------- -->
+      <div class="right-sidebar">
+        <!-- <div class="sidebar-title">
+          <h4>Event</h4>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>03</h3>
+            <span>October</span>
+          </div>
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Nghe An, Vietnam</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>16</h3>
+            <span>January</span>
+          </div>
+          <div class="right-event">
+            <h4>Digital Marketing</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Huy Daniel 's House</p>
+            <a href="#">More Info</a>
+          </div>
+        </div> -->
+        <div class="event">
+          <div class="left-event">
+             <!-- <h3>03</h3>
+                <span>October</span> -->
+          </div>
+          <div class="right-event">
+          </div>
+       </div>
+       <div class="event">
+          <h3 class="heading">Upcoming Events <span>See all</span></h3>
+          <img src="images/eve.jpg" alt="event-img">
+          <div class="event-date">
+             <h3>21 <b>july</b></h3>
+             <h4>United state of America <span>New York City</span></h4>
+          </div>
+          <button><i class="fa-regular fa-star"></i> interested</button>
+       </div>
+       <div class="create-page">
+          <ul>
+             <li>
+                <i class="fa-solid fa-circle-plus"></i>
+                <h4>Create Page &amp; Groups</h4>
+                <i class="fa-solid fa-magnifying-glass"></i>
+             </li>
+             <li>
+                <img src="images/group.jpg" alt="groups">
+             </li>
+             <li>
+                <b>Dveloper Community <span>200k Members</span></b>
+                <button>Join Group</button>
+             </li>
+          </ul>
+       </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <video src="images/ads.mp4" class="ads" autoplay loop muted></video>
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="images/eny.jpg" />
+          </div>
+          <p>Bé Linhh cutee<i class="fas fa-heart" style="color: red"></i></p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="images/me.jpg" />
+          </div>
+          <p>
+            Đặng Quốc Huy
+            <i class="fas fa-check-circle" style="color: #1876f2"></i>
+          </p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="images/nhat.jpg" />
+          </div>
+          <p>Đặng Long Nhật</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="images/huyenngu.jpg" />
+          </div>
+          <p>Nguyễn Thanh Huyền</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright 2022 - Dang Quoc Huy</p>
+    </div>
+  </body>
+</html>
